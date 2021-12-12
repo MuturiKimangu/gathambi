@@ -357,7 +357,7 @@ class DeviceRecordController extends Controller
                         $level = $level . "\nnoFace";
                         //no record
                         // dd('first');
-                        $faceRecord->status = 'enter';
+                        $faceRecord->status = 'exit';
 
                         $faceRecord->has_parent = 'yes';
                         $faceRecord->save();
@@ -429,7 +429,7 @@ class DeviceRecordController extends Controller
                         $level = $level . "\nnoFace";
                         //no record
                         // dd('first');
-                        $faceRecord->status = 'enter';
+                        $faceRecord->status = 'exit';
                         $faceRecord->has_parent = 'no';
                         $faceRecord->save();
                     }
@@ -487,7 +487,7 @@ class DeviceRecordController extends Controller
                     } else {
                         //no record
                         // dd('first');
-                        $faceRecord->status = 'enter';
+                        $faceRecord->status = 'exit';
                         $faceRecord->save();
                     }
                 }
